@@ -25,13 +25,14 @@ This is a completed assignment for Travelking.
    npm build
    ```
 
-5. Start project:
-   ```bash
-   npm run dev
-   ```
-
 5. Copy assets folder to dist folder:
    ```bash
    copy assets folder to dist folder
    ```
+
+6. Start project:
+   ```bash
+   npm run dev
+   ```
+
 
