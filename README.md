@@ -7,7 +7,7 @@ This is a completed assignment for Travelking.
 
 1. Klonujte repozitár:
    ```bash
-   git clone https://github.com/JuliusMG11/TravelkingChallenge
+   git clone https://github.com/JuliusMG11/Travelking
    ```
 
 2. Go to the repository folder:
