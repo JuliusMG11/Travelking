@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelking</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+   <!-- Header -->
+   <header class="container mx-auto p-4 border-b border-gray-200">
+      <div class="flex justify-between items-center">
+        <div class="logo w-40">
+          <img src="/assets/img/travelking-logo.svg" alt="Travelking Logo">
+        </div>
+        <div class="contact">
+          <a class="font-bold" href="tel:+420200300400">+420 200 300 400</a>
+        </div>
+      </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto my-8 p-4">
+
+   <div class="hero-section mb-16">
+    <div class="flex items-center gap-2">
+      <h1 class="text-2xl font-bold">Allegria Resort</h1>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+    <h2 class="text-xl font-semibold text-gray-500 mt-2">Schnee, Spaß & Wellness für die ganze Familie</h2>
+    <div class="grid grid-cols-4 gap-4 my-16">
+      <div class="col-span-2 row-span-2">
+        <img src="/assets/img/image-1.jpg" alt="Allegria Resort" class="w-full h-full object-cover rounded-lg">
+      </div>
+      <div>
+        <img src="/assets/img/image-2.jpg" alt="Allegria Resort" class="w-full h-full object-cover rounded-lg">
+      </div>
+      <div>
+        <img src="/assets/img/image-3.jpg" alt="Allegria Resort" class="w-full h-full object-cover rounded-lg">
+      </div>
+      <div>
+        <img src="/assets/img/image-4.jpg" alt="Allegria Resort" class="w-full h-full object-cover rounded-lg">
+      </div>
+      <div>
+        <img src="/assets/img/image-5.jpg" alt="Allegria Resort" class="w-full h-full object-cover rounded-lg">
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="grid grid-cols-3 gap-8 auto-rows-fr">
+    <div class="col-span-2">
+      <div class="bg-white shadow rounded p-14 mb-14">
+        <div class="grid grid-cols-2 gap-12">
+          <div class="">
+            <h3 class="text-xl font-bold mb-2">What is included</h3>
+            <ul class="list-disc">
+              <li>From 2 or 3 nights in your room</li>
+              <li>Full board with breakfast, lunch, cakes & dinner</li>
+              <li>Daily entrance to the spa and the sauna world</li>
+              <li>Use of the Driving Ranges</li>
+              <li>Golfing for children up to 15 years</li>
+              <li>Discounts for the green fee on the hotel's golf course</li>
+            </ul>
+          </div>
+          <div class="">
+            <h3 class="text-xl font-bold mb-2">What we love</h3>
+            <ul class="list-disc">
+              <li>14 pools and 2,200 m2 sauna area</li>
+              <li>Golf on summer green in winter</li>
+              <li>Use of the public spa also on the day of arrival and departure (from 09:00 or until 21:00)</li>
+              <li>Panoramic location: Surrounded by the idyllic landscape of Burgenland</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="roomsContainer" class="mt-6 hidden">
+        <h2 class="text-xl font-semibold mb-4">Available Rooms</h2>
+        <div id="roomsList" class="flex flex-col gap-4 "></div>
+      </div>
+     
+    </div>
+    <div class="calendar-box sticky rounded bg-white shadow p-4 h-max">
+      <h2 class="text-xl font-semibold mb-4">Check rooms availability</h2>
+      <button id="openCalendar" class="px-4 py-2 bg-black text-white rounded-full hover:bg-gray-600">
+        Show Availability
+      </button>
+    </div>
+
+  </div>
+
+    <div id="calendarPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+      <div class="bg-white rounded p-6 shadow-lg w-4/5 max-w-lg">
+        <h2 class="text-lg font-semibold mb-4">Select Your Dates</h2>
+        <div id="calendar" class="mb-4"></div>
+        <button id="submitDates" class="px-4 py-2 bg-black text-white rounded-full hover:bg-black-700">
+          Confirm
+        </button>
+        <button id="closePopup" class="px-4 py-2 bg-gray-400 text-white rounded-full hover:bg-gray-500 mt-2">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="/dist/bundle.js"></script>
+</body>
+</html>

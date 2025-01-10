@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.calendar-box  {
+    top: 8px;
+}
+
+.room-box__container--top {
+    display: flex;
+    gap: 24px;
+}
+
+.room-box__details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    gap: 16px;
+    width: 58%;
+    flex: 1;
+}
+
+.room-box__image{
+    width: 224px;
+    height: 168px;
+}
+
+.room-box__price {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.room-box__capacity,
+.room-box__size {
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.room-box__details--left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+}
+
+.room-box__details--right {
+    min-width: max-content;
+}
+
+.room-box__amenities {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.room-box__amenity {
+    font-size: 14px;
+    background-color: #F2F2F2;
+    font-weight: 400;
+    color: #808080;
+    padding: 4px 8px;
+    border-radius: 32px;
+}
